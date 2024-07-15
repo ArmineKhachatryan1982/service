@@ -52,6 +52,7 @@ Route::group(['middleware' => ['auth']], function() {
 
         Route::post('test', AuthorInfoStoreController::class)->name('author-test');
         Route::get('/category-type',CategoryController::class)->name('category_type');
+        // post anwum enq wor formen ashxati gwujnic el anwum enq wor ejy veradarzni
         Route::post('/question-count',QuestionCountController::class)->name('question_count');
         Route::get('/question-count',[QuestionCountController::class,'show'])->name('question_count_get');
         Route::post('/question-type', QuestionTypeController::class)->name('question_type');
